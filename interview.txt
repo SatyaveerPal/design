@@ -1,0 +1,54 @@
+
+https://rivagecare.com/
+https://www.game7sportswear.com/
+https://www.littleones.ie/
+https://www.gamestableuk.com/
+https://donaghybros.co.uk/
+https://www.uksportimports.com/
+https://gymequipment.co.uk/
+http://bandaistore.co.uk/
+
+
+
+
+rm -rf var/cache/ var/session/ var/view_preprocessed/ pub/static/ 
+
+
+for flush     php bin/magento cache:flush
+
+rm -rf var/cache/ var/session/ var/view_preprocessed/ pub/static/
+
+
+
+for upgrade   php bin/magento setup:upgrade
+deploy        php bin/magento setup:static-content:deploy en_GB en_US -f
+
+
+variables Control commonly used values in a single location.
+we define veriables with the sign of @, usully for colors, dimensions, selectors font-family we use variables.
+
+
+Mixin enables us to use an existing class or ids's styles to another selector.
+we use # to define mixin
+
+Nesting
+
+Extend in extent we can use other class styles with extend
+.box1{background:#000;}
+then we need to...
+.box2:extend(box1)
+
+
+
+
+variables    @
+Extend       :extend(.classname), &:extend(.classname);
+Merge        marge propertioes of element.
+Mixin
+function
+
+
+
+android studio
+
+
